@@ -1,0 +1,17 @@
+# /etc/apt/sources.list.d/debian-security.sources
+#
+# Debian Testing — Security updates (DEB822 format)
+# Place this file at:  /etc/apt/sources.list.d/debian-security.sources
+#
+# IMPORTANT: Keep this file SEPARATE from the main sources file.
+# axupdate detects the "security.debian.org" origin to assign
+# Security Level 5 (Critical) to packages coming from this channel.
+# Merging it into the main file would break that detection.
+#
+# Do NOT change the URI — security.debian.org has no official mirrors.
+
+Types: deb deb-src
+URIs: http://security.debian.org/debian-security
+Suites: testing-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg

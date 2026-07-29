@@ -1,0 +1,27 @@
+# /etc/apt/sources.list.d/debian-testing.list
+#
+# Debian Testing — TRADITIONAL FORMAT fallback (.list)
+# Use this file ONLY if your system does not support DEB822 (.sources) format.
+# (DEB822 is supported on Debian 11+ / apt 2.3+)
+#
+# Place this file at: /etc/apt/sources.list.d/debian-testing.list
+# Make sure to REMOVE or DISABLE the .sources files if you use this one,
+# otherwise apt will read both and double-fetch everything.
+#
+# CONFIGURATION: Replace the mirror URL on each line with one near you.
+# Mirror list: https://www.debian.org/mirror/list
+
+# Main repository
+deb http://deb.debian.org/debian testing main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian testing main contrib non-free non-free-firmware
+
+# Security updates  ← keep on security.debian.org, no mirrors exist
+deb http://security.debian.org/debian-security testing-security main contrib non-free non-free-firmware
+deb-src http://security.debian.org/debian-security testing-security main contrib non-free non-free-firmware
+
+# Testing-updates
+deb http://deb.debian.org/debian testing-updates main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian testing-updates main contrib non-free non-free-firmware
+
+# Backports (optional — comment out if not needed)
+deb http://deb.debian.org/debian testing-backports main contrib non-free non-free-firmware

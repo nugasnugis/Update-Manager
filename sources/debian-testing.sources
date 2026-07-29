@@ -1,0 +1,33 @@
+# /etc/apt/sources.list.d/debian-testing.sources
+#
+# Debian Testing — main repositories (DEB822 format)
+# Place this file at:  /etc/apt/sources.list.d/debian-testing.sources
+#
+# CONFIGURATION: Change the URIs below to a mirror close to you.
+# Mirror list:  https://www.debian.org/mirror/list
+# Example mirrors:
+#   http://deb.debian.org/debian          (official CDN, good globally)
+#   http://ftp.us.debian.org/debian       (US)
+#   http://ftp.de.debian.org/debian       (Germany)
+#   http://ftp.uk.debian.org/debian       (UK)
+#   http://ftp.au.debian.org/debian       (Australia)
+
+Types: deb deb-src
+URIs: http://deb.debian.org/debian
+Suites: testing
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Testing-updates — smaller, targeted updates published before the next point release
+Types: deb deb-src
+URIs: http://deb.debian.org/debian
+Suites: testing-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
+
+# Backports (optional — comment out if you do not need backported packages)
+Types: deb
+URIs: http://deb.debian.org/debian
+Suites: testing-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
