@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=axupdate
+GenericName=Update Manager
+Comment=OS Update Manager for axpm
+Exec=pkexec python3 /usr/local/bin/axupdate.py
+Icon=system-software-update
+Terminal=false
+Categories=System;Settings;
+StartupWMClass=axupdate
+Keywords=update;upgrade;apt;axpm;packages;software;
