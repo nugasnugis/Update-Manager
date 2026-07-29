@@ -21,7 +21,6 @@ from PyQt6.QtCore import (
 from PyQt6.QtGui import QColor, QFont, QIcon
 from PyQt6.QtWidgets import (
     QApplication,
-    QCheckBox,
     QHBoxLayout,
     QHeaderView,
     QLabel,

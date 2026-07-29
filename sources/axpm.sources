@@ -1,21 +1,23 @@
 # /etc/apt/sources.list.d/axpm.sources
 #
 # axpm — Custom repository (DEB822 format)
-# Place this file at:  /etc/apt/sources.list.d/axpm.sources
+# ─────────────────────────────────────────────────────────────────────────────
+# This file is generated automatically by install.sh.
+# Do not edit it manually — re-run install.sh with your config values instead.
 #
-# CONFIGURATION REQUIRED — edit the three lines marked [CHANGE ME]:
+# GitHub Pages example:
+#   URIs:  https://YourUser.github.io/axpm-repo
+#   Key:   https://raw.githubusercontent.com/YourUser/axpm-repo/main/axpm.gpg
 #
-#   1. URIs        — your axpm repo base URL
-#   2. Suites      — your repo's distribution name / codename
-#   3. Signed-By   — path to the GPG keyring for your repo (see install.sh)
+# Self-hosted example:
+#   URIs:  https://repo.yourdomain.org/axpm
+#   Key:   https://repo.yourdomain.org/axpm/axpm.gpg
 #
-# If your repo does not have source packages, remove the "deb-src" from Types.
+# ─────────────────────────────────────────────────────────────────────────────
+# If you must edit this file manually, change only the values below:
 
 Types: deb
-# [CHANGE ME] Replace with your actual axpm repository URL:
-URIs: https://repo.example.com/axpm
-# [CHANGE ME] Replace with your repo's suite/codename (e.g. stable, testing, trixie):
+URIs: https://YourUser.github.io/axpm-repo
 Suites: stable
 Components: main
-# [CHANGE ME] Replace with the path where install.sh saved your repo's GPG key:
 Signed-By: /usr/share/keyrings/axpm-archive-keyring.gpg
